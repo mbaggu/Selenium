@@ -1,0 +1,13 @@
+TestNG concept
+TDD - Test Driven Development 
+
+It is like JUnit to execute the test cases
+we can generate reports using TestNG
+different annotations
+different dependency
+Grouping
+data provider ---- very good option to use data multiple times 
+priority/sequence
+
+
+We never work with main class in TestNG

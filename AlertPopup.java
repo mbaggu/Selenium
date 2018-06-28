@@ -32,7 +32,7 @@ public class AlertPopup {
 		
 		alert.accept();
 		
-	
+driver.quit();
 
 	}
 

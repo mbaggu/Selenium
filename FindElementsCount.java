@@ -36,7 +36,6 @@ System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\
 		
 		}
 			
-
 	}
 
 }

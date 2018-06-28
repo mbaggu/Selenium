@@ -21,6 +21,8 @@ System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\
 		driver.get("https://www.ebay.com/");
 		
 		clickon(driver, driver.findElement(By.xpath("//input[contains(@type, 'submit')]")), 20);
+		
+		driver.quit();
 	}
 
 	public static void clickon(WebDriver driver, WebElement locator, int timeout) 
@@ -28,6 +30,6 @@ System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\
 		
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.elementToBeClickable(locator));
 		locator.click();
-	
+			
 	}
 }

@@ -19,10 +19,13 @@ System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32\
 		driver.manage().deleteAllCookies();
 		
 		driver.get("https://www.amazon.com/");
-
-		File src= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		
-		FileHandler.copy(src, new File("E:\\Selenium\\ScreenShot\\" +System.currentTimeMillis()+ ".png" ));
+		File src= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(src, new File ("E:\\Selenium\\ScreenShot\\" +System.currentTimeMillis()+ ".png"));		
+
+		//File src= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		
+		//FileHandler.copy(src, new File("E:\\Selenium\\ScreenShot\\" +System.currentTimeMillis()+ ".png" ));
 
 	}
 
